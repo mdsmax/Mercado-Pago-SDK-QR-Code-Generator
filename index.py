@@ -9,6 +9,7 @@ accesstoken = config['accesstoken']
 
 if not accesstoken:
     print("Sua Access Token não está configurada. Por favor, configure-a em config.json. Lembre-se que é necessário ter uma conta mercado pago +18!")
+    exit()
 
 else:
     sdk = mercadopago.SDK(str(accesstoken))
